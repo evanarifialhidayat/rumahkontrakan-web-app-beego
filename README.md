@@ -29,34 +29,11 @@ Beego is composed of four parts:
 
 ![Http Request](https://cdn.nlark.com/yuque/0/2020/png/755700/1607857462507-855ec543-7ce3-402d-a0cb-b2524d5a4b60.png)
 
-#### Create `hello` directory, cd `hello` directory
-
-    mkdir hello
-    cd hello
-
-#### Init module
-
-    go mod init
-
-#### Download and install
-
-    go get github.com/beego/beego/v2@latest
-
-#### Create file `hello.go`
-
-```go
-package main
-
-import "github.com/beego/beego/v2/server/web"
-
-func main() {
-	web.Run()
-}
-```
-
 #### run
 
-    cd Breadcrumbsrumahkontrakan-web-app-beego
+    go install github.com/astaxie/beego@latest
+    git clone https://github.com/evanarifialhidayat/rumahkontrakan-web-app-beego.git
+    cd rumahkontrakan-web-app-beego/rumahkontrakan-web-app-beego
     bee run
 
 #### Go to [http://localhost:8080](http://localhost:8080)
